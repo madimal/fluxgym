@@ -18,11 +18,11 @@ services:
       - ./:/app/fluxgym
     stop_signal: SIGKILL
     tty: true
-    deploy:
-      resources:
-        reservations:
-          devices:
-          - driver: nvidia
-            count: all
-            capabilities: [gpu]
+#    deploy:
+#      resources:
+#        reservations:
+#         devices:
+#          - driver: nvidia
+#            count: all
+#            capabilities: [gpu]
     restart: unless-stopped
